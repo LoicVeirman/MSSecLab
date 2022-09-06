@@ -59,7 +59,8 @@ if (test-path .\Inputs\$FileName)
                 $tmp = New-ADUser   -Path ($user.BaseOU + "," + (Get-ADDomain).DistinguishedName) `
                                     -USerPrincipalName ($user.samAccountName + "@" + (Get-ADDomain).DNSRoot) `
 									-SamAccountName $user.samaccountname `
-                                    -Name $user.Name `                                    -GivenName $user.givenName `
+                                    -Name $user.Name `
+                                    -GivenName $user.givenName `
                                     -Surname $user.Surname `
                                     -AccountPassword (ConvertTo-SecureString -AsPlainText $user.AccountPassword -Force) `
                                     -Company $user.company `
