@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ouTree>
+  <OU Class="SITE">
+    <ChildOU>
+      <Description>Groupes de Gestion du site</Description>
+      <Name>Groupes</Name>
+    </ChildOU>
+    <ChildOU>
+      <Description>Serveurs installés du site</Description>
+      <Name>Serveurs</Name>
+    </ChildOU>
+    <ChildOU>
+      <Description>Comptes de service dédiés au site</Description>
+      <Name>Services</Name>
+    </ChildOU>
+    <ChildOU>
+      <Description>Objets désactivés</Description>
+      <Name>Tombstone</Name>
+    </ChildOU>
+    <ChildOU>
+      <Description>Utilisateurs du site</Description>
+      <Name>Utilisateurs</Name>
+    </ChildOU>
+    <ChildOU>
+      <Description>PC utilisés sur le site</Description>
+      <Name>Workstations</Name>
+      <ChildOU>
+        <Description>PC portables (connexion ethernet et wifi)</Description>
+        <Name>Laptops</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>PC fixes (connexion ethernet)</Description>
+        <Name>Desktops</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>Tablettes (connexion wifi)</Description>
+        <Name>Tablettes</Name>
+      </ChildOU>
+    </ChildOU>
+  </OU>
+  <OU Class="ADMIN">
+    <ChildOU>
+      <Description>Administration AD</Description>
+      <Name>Tier1</Name>
+      <ChildOU>
+        <Description>Groupes dédiés à l'administration AD</Description>
+        <Name>Groupes</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>Serveurs dédiés à AD</Description>
+        <Name>Serveurs</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>Comptes de service dédiés à AD</Description>
+        <Name>Services</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>Objets désactivés</Description>
+        <Name>Tombstone</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>Administrateurs AD</Description>
+        <Name>Utilisateurs</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>PC dédiés à l'administration AD</Description>
+        <Name>Workstations</Name>
+      </ChildOU>
+    </ChildOU>
+    <ChildOU>
+      <Description>Administration Serveurs</Description>
+      <Name>Tier2</Name>
+      <ChildOU>
+        <Description>Groupes dédiés à l'administration des serveurs</Description>
+        <Name>Groupes</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>Serveurs dédiés à l'administration des serveurs</Description>
+        <Name>Serveurs</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>Comptes de service dédiés à l'administration des serveurs</Description>
+        <Name>Services</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>Objets désactivés</Description>
+        <Name>Tombstone</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>Administrateurs des serveurs</Description>
+        <Name>Utilisateurs</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>PC dédiés à l'administration des serveurs</Description>
+        <Name>Workstations</Name>
+      </ChildOU>
+    </ChildOU>
+    <ChildOU>
+      <Description>Administration PC</Description>
+      <Name>Tier3</Name>
+      <ChildOU>
+        <Description>Groupes dédiés à l'administration des PC</Description>
+        <Name>Groupes</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>Serveurs dédiés à l'administration des PC</Description>
+        <Name>Serveurs</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>Comptes de service dédiés à l'admninistration des PC</Description>
+        <Name>Services</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>Objets désactivés</Description>
+        <Name>Tombstone</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>Administrateurs dédiés à l'administration des PC</Description>
+        <Name>Utilisateurs</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>PC dédiés à l'administration des PC</Description>
+        <Name>Workstations</Name>
+      </ChildOU>
+    </ChildOU>
+  </OU>
+  <OU Class="DATACENTER">
+    <ChildOU>
+      <Description>Gestion du datacenter</Description>
+      <Name>Administration</Name>
+      <ChildOU>
+        <Description>Groupes dédiés à l'administration du datacenter</Description>
+        <Name>Groupes</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>Comptes de service dédiés au datacenter</Description>
+        <Name>Services</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>Objets désactivés</Description>
+        <Name>Tombstone</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>Administrateurs dédié au datacenter</Description>
+        <Name>Utilisateurs</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>PC dédiés à l'administration du datacenter</Description>
+        <Name>Workstations</Name>
+      </ChildOU>
+    </ChildOU>
+    <ChildOU>
+      <Description>Administration Serveurs</Description>
+      <Name>Serveurs</Name>
+      <ChildOU>
+        <Description>Serveurs applicatifs</Description>
+        <Name>Applications</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>Serveurs de bases de données</Description>
+        <Name>Bases de Données</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>Service d'infrastructures</Description>
+        <Name>Infrastructures</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>Objets désactivés</Description>
+        <Name>Tombstone</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>Citrix ou RDS</Description>
+        <Name>VDI</Name>
+      </ChildOU>
+      <ChildOU>
+        <Description>Serveurs du domaine localisé en DMZ</Description>
+        <Name>DMZ</Name>
+      </ChildOU>
+    </ChildOU>
+  </OU>
+</ouTree>
