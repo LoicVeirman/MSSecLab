@@ -33,7 +33,7 @@ foreach ($data in $csvData)
     $DisplayName    = $Surname + " " + $Name
     $DefaultPwd     = "34sy-L1f3=" + (Get-Random -minimum 1000 -maximum 9999)
 
-    ($DisplayName + "`t`t" + $DefaultPwd) | outfile .\PwdList.txt -append 
+    ($DisplayName + "`t`t" + $DefaultPwd) | out-file .\PwdList.txt -append 
 
     try {
         new-aduser -name $DisplayName -AccountPAssword (convertto-secureString -asplaintext $DefaultPwd -force) `
