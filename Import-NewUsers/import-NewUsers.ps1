@@ -14,7 +14,7 @@ Param(
 
 $csvData = import-csv .\$ImportCsvFile
 
-$msg = "Please provide DN path to store object (if needed): "
+$msg = "Please provide DN path to store objects (if needed)"
 $DfltDN = read-host -prompt $msg
 
 if ($DfltDN -eq "")
