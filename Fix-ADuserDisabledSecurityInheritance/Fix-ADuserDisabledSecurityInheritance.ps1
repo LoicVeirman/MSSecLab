@@ -58,23 +58,23 @@ foreach ($user in $Users)
 
     if ($tobeFixed)
     {
-		$fixedUsers += $user
+	$fixedUsers += $user
         try 
-		{
-            $dn   = $user.DistinguishedName
-            $null = dsacls $dn -resetDefaultDACL
-            Write-Host "+" -NoNewline:$sameLine -ForegroundColor Green
-            $FixCounter++
-		}
-		Catch
-		{
-			Write-Host "!" -NoNewline:$sameLine -ForegroundColor Red
-		}
-
+	{
+        	$dn   = $user.DistinguishedName
+        	$null = dsacls $dn -resetDefaultDACL
+        	
+		Write-Host "+" -NoNewline:$sameLine -ForegroundColor Green
+        	$FixCounter++
+	}
+	Catch
+	{
+		Write-Host "!" -NoNewline:$sameLine -ForegroundColor Red
+	}
     } 
     Else 
     {
-        Write-Host "." -NoNewline:$sameLine -ForegroundColor white
+    	Write-Host "." -NoNewline:$sameLine -ForegroundColor white
     }
 }
 Write-Host "Done`n" -ForegroundColor Cyan
