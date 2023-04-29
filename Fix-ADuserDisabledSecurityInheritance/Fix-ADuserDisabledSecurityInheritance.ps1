@@ -61,17 +61,19 @@ foreach ($user in $Users)
 		$fixedUsers += $user
         try 
 		{
-			$dn   = $user.DistinguishedName
-			$null = dsacls $dn -resetDefaultDACL
-			Write-Host "+" -NoNewline:$sameLine -ForegroundColor Green
-			$FixCounter++
+            $dn   = $user.DistinguishedName
+            $null = dsacls $dn -resetDefaultDACL
+            Write-Host "+" -NoNewline:$sameLine -ForegroundColor Green
+            $FixCounter++
 		}
 		Catch
 		{
 			Write-Host "!" -NoNewline:$sameLine -ForegroundColor Red
 		}
 
-    } Else {
+    } 
+    Else 
+    {
         Write-Host "." -NoNewline:$sameLine -ForegroundColor white
     }
 }
